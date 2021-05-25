@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ichiraku</title>
+    <link href="./IchirakuEN.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" id="nb">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contacts">Contacts</a>
+        <a href="#delivery">Delivery</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </nav>
+    </header>
+    <h1 class="home-text" id="home">Welcome to New Ichiraku</h1>
+
+    <h1 class="title" id="menu">Menu</h1>
+    <section class="menu-container">
+      <div class="dish-card">
+        <img src="./pictures/soups.jpg" alt="dish card" class="card-img" width="264" height="233">
+          <h2 class="card-title">Soups</h2>
+        </img>
+      </div>
+      <div class="dish-card">
+        <img src="./pictures/farhad-ibrahimzade-lu4DoNm-Muk-unsplash.jpg" alt="dish card" class="card-img" width="264" height="233">
+          <h2 class="card-title">Salads</h2>
+        </img>
+      </div>
+      <div class="dish-card">
+        <img src="./pictures/dessert.jpg" alt="dish card" class="card-img" width="264" height="233">
+          <h2 class="card-title">Desserts</h2>
+        </img>
+      </div>
+      <div class="dish-card">
+        <img src="./pictures/hm.jpg" alt="dish card" class="card-img" width="264" height="233">
+          <h2 class="card-title">Hot Meals</h2>
+        </img>
+      </div>
+      <div class="dish-card">
+        <img src="./pictures/sushi.jpg" alt="dish card" class="card-img" width="264" height="233">
+          <h2 class="card-title">Sushi</h2>
+        </img>
+      </div>
+      <div class="dish-card">
+        <img src="./pictures/sn.jpg" alt="dish card" class="card-img" width="264" height="233">
+          <h2 class="card-title">Snacks</h2>
+        </img>
+      </div>
+    </section>
+    <p class="menu-description">
+      Delicious traditional food of oriental countries. With<br />
+      love for you from the best chefs
+    </p>
+    <h1 class="title" id="contacts">Contacts</h1>
+    <section class="contacts-container">
+      <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.2968689093436!2d24.001823915540033!3d49.818085340607496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae79ac926b58d%3A0xb1ab537616b3ceaa!2sKnyahyni%20Ol&#39;hy%20St%2C%2011%2C%20L&#39;viv%2C%20L&#39;vivs&#39;ka%20oblast%2C%2079000!5e0!3m2!1sen!2sua!4v1618261010051!5m2!1sen!2sua"
+          width="506"
+          height="444"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          class="map"
+    ></iframe>
+    <div class="location-container">
+      <h2 class="contacts-title">Location</h2>
+      <p class="contacts-text">
+        st. Knyahyni Olhy, 11 - 79044, Ukraine - Lviv<br />
+        +38 093 449 30 48<br />
+        +38 097 312 32 92
+      </p>
+      <h2 class="contacts-title">Opening time</h2>
+      <p class="contacts-text">
+        Monday - Sunday 12.00 - 23.00<br />
+        Places: 40
+      </p>
+    </div>
+    </section>
+    <h1 class="title" id="delivery">Delivery</h1>
+    <section class="delivery-container">
+      <div class="delivery-images">
+        <img src="./pictures/instagram.png" alt="instagram" class="delivery-image">
+        <img src="./pictures/phone-call.png" alt="phone" class="delivery-image">
+        <img src="./pictures/telegram.png" alt="telegram" class="delivery-image">
+      </div>
+      <h2 class="contacts-title">Response</h2>
+      <div class="form-wrapper">
+        <form class="form-container">
+          <input type="text" id="name" placeholder="Name" class="form-input" />
+          <input type="text" id="lname" placeholder="Email" class="form-input" />
+          <input type="text" id="lname" placeholder="Subject" class="form-input" />
+          <textarea id="message" cols="30" rows="10" placeholder="Message" class="form-input form-textarea"></textarea>
+          <button class="form-submitbtn">Submit</button>
+        </form>
+      </div>
+    </section>
+    <div class="license">© 2021 NI</div>
+    <video autoplay muted loop id="myVideo" src="./pictures/Cook.mov">
+  </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById('nb')
+      if (x.className === 'navbar') {
+        x.className += ' responsive'
+      } else {
+        x.className = 'navbar'
+      }
+    }
+  </script>
+</html>

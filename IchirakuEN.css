@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Julee:400');
+@import url('https://fonts.googleapis.com/css?family=Shanti:400');
+
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #000;
+  background-image: url('./pictures/main.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+}
+
+.home-text {
+  font-family: 'Julee', sans-serif;
+  font-size: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 25%;
+  margin-bottom: 45%;
+}
+
+.navbar {
+  display: flex;
+  overflow: hidden;
+  justify-content: flex-end;
+  filter: brightness(1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar a {
+  font-family: 'Julee', sans-serif;
+  font-size: 24px;
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 255, 255);
+}
+
+.navbar.responsive a:not(:last-child) {
+  display: none;
+}
+.navbar a:last-child {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.title {
+  font-family: 'Julee', sans-serif;
+  font-size: 48px;
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+  margin-top: 1em;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: wrap;
+}
+
+.dish-card {
+  width: 264px;
+  padding: 2% 4%;
+  border-bottom: 1px solid #fff;
+  margin: 1% 1%;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-family: 'Julee', sans-serif;
+  font-size: 36px;
+  text-align: center;
+}
+
+.menu-description {
+  text-align: center;
+  font-family: 'Shanti', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  font-weight: normal;
+}
+
+.contacts-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 10rem;
+  padding: 16px;
+}
+
+.location-container {
+  text-align: start;
+}
+
+.contacts-title {
+  font-family: 'Julee', sans-serif;
+  font-size: 36px;
+}
+
+.contacts-text {
+  font-family: 'Julee', sans-serif;
+  font-size: 16px;
+}
+
+.license {
+  text-align: center;
+  font-family: 'Shanti', sans-serif;
+  font-size: 18px;
+  margin-top: 3em;
+}
+
+#myVideo {
+  width: 1519px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.form-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
+}
+
+.form-input {
+  height: 2rem;
+  font-size: 1.5rem;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.form-textarea {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #fff;
+  height: 10rem;
+  margin-top: 2rem;
+}
+
+.form-submitbtn {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  align-self: flex-end;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.3rem;
+}
+
+.form-submitbtn:focus {
+  outline: none;
+}
+
+.form-submitbtn:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.form-submitbtn:hover {
+  background-color: #fff;
+}
+
+.form-submitbtn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.delivery-images {
+  display: flex;
+  justify-content: center;
+}
+
+.delivery-image {
+  width: 100px;
+  margin: 0 16px;
+}
+
+.contacts-title {
+  text-align: center;
+}
+
+@media only screen and (max-width: 950px) {
+  .form-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 964px) {
+  .location-container {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    background-size: contain;
+  }
+
+  .navbar {
+    flex-direction: column-reverse;
+    margin-left: auto;
+  }
+
+  .navbar a {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .dish-card {
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .contacts-title {
+    font-size: 24px;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
+
+  .delivery-image {
+    width: 60px;
+    margin: 0 16px;
+  }
+}
