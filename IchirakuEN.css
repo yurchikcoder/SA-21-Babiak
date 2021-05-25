@@ -162,7 +162,7 @@ body {
 }
 
 .form-textarea {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Shanti', sans-serif;
   border: 1px solid #fff;
   height: 10rem;
   margin-top: 2rem;
@@ -209,6 +209,36 @@ body {
   text-align: center;
 }
 
+.top-dishes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top-dish-img {
+  border-radius: 20px;
+}
+
+.top-dish-title {
+  font-size: 24px;
+}
+
+.top-dish-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Shanti', sans-serif;
+  height: 600px;
+  border-bottom: 1px solid #fff;
+  margin: 36px;
+  width: 300px;
+}
+
+.top-dish-description {
+  text-align: center;
+}
 @media only screen and (max-width: 950px) {
   .form-wrapper {
     width: 90%;
